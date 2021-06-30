@@ -27,6 +27,12 @@ const handleUserInput = function(key) {
   if(key === '\u0003') {
     process.exit();
   }
+  if(key === 'y') {
+    connection.write('Say: yasss');
+  }
+  if(key === 'h') {
+    connection.write('Say: woohooooo');
+  }
 };
 
 module.exports = setupInput;
